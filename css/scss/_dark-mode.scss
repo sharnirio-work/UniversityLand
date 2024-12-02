@@ -1,0 +1,117 @@
+.dark-mode {
+	background: #1F2126;
+	color: #EDEEEE;
+
+	.dark-none {
+		display: none;
+	}
+
+	.dark-block {
+		display: block;
+	}
+
+	hr {
+
+		background: #343539;
+	}
+
+	.btn {
+		color: #EDEEEE;
+		border: 1px solid #FAFAFA;
+
+		&:hover {
+			color: #EDEEEE;
+		}
+
+		&._btn-white {
+			background: transparent;
+			border: 1px solid #FAFAFA;
+		}
+	}
+
+	.header {
+		border-bottom: 1px solid #343539;
+		background: #2A2C2F;
+		box-shadow: 0px 1px 0px 0px #343539;
+	}
+
+	.header-inner .btn {
+		border: 1px solid #343539;
+	}
+
+	.hero {
+		box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.04);
+	}
+
+	.hero-bg:after {
+		background: linear-gradient(240deg, rgba(3, 85, 189, 0.55) -13.62%, #0355BD 51.41%);
+	}
+
+	.t-line:before {
+		background: #0355BD;
+	}
+
+	.g-login {
+		._blue .g-login-t {
+			background-color: #0355BD;
+		}
+
+		._red .g-login-t {
+			background-color: #9D2235;
+		}
+
+		._gray .g-login-t {
+			background-color: #7D7F84;
+		}
+	}
+
+	.g-login-b {
+		background: #2A2C2F;
+		border-color: #343539;
+
+		.btn-link {
+			color: #F9F9F9;
+		}
+
+	}
+
+	.g-course {
+		border: 1px solid #343539;
+		background: #2A2C2F;
+	}
+
+	.g-course-txt {
+		color: #EDEEEE;
+	}
+
+	.blue-w {
+		background-color: #0355BD;
+	}
+
+	.white-w {
+		background: #2A2C2F;
+		border-color: #343539;
+	}
+
+	.footer {
+		color: #9A9EA1;
+	}
+
+	.footer-them-l {
+		color: #EDEEEE;
+	}
+
+	.footer-them-d {
+		color: #9A9EA1;
+	}
+
+	.toggle-label {
+		border-color: #343539;
+		background: #2A2C2F;
+
+		&::before {
+			background: #0355BD;
+			border-color: #343539;
+		}
+	}
+}

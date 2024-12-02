@@ -1,0 +1,31 @@
+// ------------------ INDENT --------------------
+$spacer: 10px !default;
+$indentAray: (
+	2: $spacer * 2,
+	3: $spacer * 3,
+	4: $spacer * 4
+);
+
+@each $name, $size in $indentAray {
+	.mt-#{$name},
+	.my-#{$name} {
+		margin-top: $size;
+	}
+	.mb-#{$name},
+	.my-#{$name} {
+		margin-bottom: $size;
+	}
+}
+
+@each $name, $size in $indentAray {
+	@include media("<tablet") {
+		.mt-md-#{$name},
+		.my-md-#{$name} {
+			margin-top: $size;
+		}
+		.mb-md-#{$name},
+		.my-md-#{$name} {
+			margin-bottom: $size;
+		}
+	}
+}

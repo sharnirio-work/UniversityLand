@@ -1,0 +1,86 @@
+$h1-h6-font-size: (
+	// --------- h1 ---- h2 ----h3 ---- h4 -- h5 -- h6 ---
+	"default": (
+		42px,
+		26px,
+		24px,
+		18px,
+		17px,
+		16px
+	),
+	"tablet": (
+		26px,
+		18px,
+		24px,
+		18px,
+		14px,
+		13px
+	)
+);
+$breakpoints: (
+	"full": 1920px,
+	"xl": 1680px,
+	"macbook": 1440px,
+	"ipad-pro": 1366px,
+	"desktop-lg": 1280px,
+	"desktop-md": 1200px,
+	"desktop": 1024px,
+	"tablet": 834px,
+	"phone": 667px,
+	"phone-md": 568px,
+	"phone-sm": 480px,
+	"phone-mob": 430px,
+	"phone-xs": 375px,
+);
+// ligatured operators ≥ ≤
+
+// keywords
+$media-expressions: (
+	"iphoneX":
+		"(min-width: 812px) and (max-height: 414px) and (orientation: landscape)",
+	"screen": "screen",
+	"print": "print",
+	"handheld": "handheld",
+	"landscape": "(orientation: landscape)",
+	"portrait": "(orientation: portrait)",
+	"retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+	"retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)",
+);
+
+:root {
+	// --- HTML style
+	--rem-base: 10px;
+
+	// --- Body style
+	--base-font-size: 14px;
+	--base-line-height: 1.57;
+	--vertical-rhythm: calc(var(--base-line-height) * 1em);
+
+	// --- Container
+	--container: 1240px;
+
+	// --- Gutter
+	--gutter: 3rem;
+
+	// --- Css variable for h1-h6 font-size
+	@each $name, $array in $h1-h6-font-size {
+		@if ($name == "default") {
+			@for $i from 1 through length($array) {
+				--h#{$i}: #{nth($array, $i)};
+			}
+		} @else {
+			@include media("<#{$name}") {
+				@for $i from 1 through length($array) {
+					--h#{$i}: #{nth($array, $i)};
+				}
+			}
+		}
+	}
+	@include media("iphoneX") {
+		//increase paddings that content didn't disturb notch for landscape orientation https://twitter.com/i/status/907911237983449088
+		--gutter: 50px;
+	}
+	@include media('<phone') {
+		--gutter: 20px;
+	}
+}

@@ -1,2 +1,0 @@
-# UniversityLand
-UniversityLanding
