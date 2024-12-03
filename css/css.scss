@@ -16,10 +16,6 @@
 	&._xl {
 		--container: 1380px;
 	}
-
-	&._sm {
-		--container: 1180px;
-	}
 }
 
 //------------------- footer to bottom
@@ -209,9 +205,15 @@ hr {
 .h5-custom {
 	@extend .h5;
 
+	@include media("<=phone") {
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	br {
-		@include media("<=tablet") {
-			display: none;
+		@include media("<=phone") {
+			display: none !important;
 		}
 	}
 }
@@ -221,8 +223,14 @@ hr {
 }
 
 .d-lg-block {
-	@include media("<=tablet") {
+	@include media("<=desktop") {
 		display: block;
+	}
+}
+
+.d-sm-none {
+	@include media("<=phone") {
+		display: none;
 	}
 }
 
@@ -247,6 +255,7 @@ hr {
 
 .t-line {
 	padding-bottom: 20px;
+	margin-bottom: 20px;
 	position: relative;
 
 	&:before {
@@ -390,11 +399,14 @@ hr {
 		bottom: 0;
 		right: 0;
 		background: linear-gradient(244deg, rgba(0, 47, 108, 0.55) -4.46%, #002F6C 66.87%);
+		@include media("<=phone") {
+			background: linear-gradient(244deg, rgba(0, 47, 108, 0.55) -94.29%, #002F6C 53.97%);
+		}
 	}
 }
 
 .hero-main {
-	max-width: 585px;
+	max-width: 610px;
 	padding: 20px 0;
 
 	.t-ico img {
@@ -403,6 +415,19 @@ hr {
 		@include media("<=phone") {
 			max-width: 22px;
 		}
+	}
+}
+
+.hero-c {
+	--container: 1180px;
+	width: 100%;
+	max-width: calc(var(--container) + var(--gutter)* 2);
+	margin: 0 auto;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+	margin: auto;
+	@include media("<=phone") {
+		--gutter: 30px;
 	}
 }
 
@@ -423,14 +448,14 @@ hr {
 	@include media("<=phone") {
 		font-size: 12px;
 		padding-right: 40px;
-		padding: 20px;
+		padding: 20px 30px;
 	}
 }
 
 .g-login {
 	display: flex;
 	justify-content: space-between;
-	gap: 15px;
+	gap: 20px 15px;
 
 	@include media("<=phone") {
 		flex-direction: column;
@@ -543,6 +568,12 @@ hr {
 .g-course-img {
 	@include a-r(572, 262);
 	border-radius: 4px;
+
+	&:before {
+		@include media("<=phone") {
+			padding-top: arf(316,275);
+		}
+	}
 
 	img {
 		@extend %bg-stretch-img;
