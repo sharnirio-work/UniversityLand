@@ -450,12 +450,12 @@ html {
 }
 
 body {
-  color: #3E3F42;
+  color: #3e3f42;
   font: 400 var(--base-font-size)/var(--base-line-height) "Lato", sans-serif;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #FBFBFD;
+  background: #fbfbfd;
 }
 
 h1,
@@ -602,7 +602,7 @@ ol li {
 }
 
 hr {
-  background: #EAEDF3;
+  background: #eaedf3;
   height: 1px;
   border: none;
   margin: 2.5rem 0;
@@ -675,7 +675,7 @@ hr {
           transform: translateX(-50%);
   width: 38px;
   height: 4px;
-  background-color: #09357A;
+  background-color: #09357a;
 }
 
 .btn {
@@ -694,7 +694,7 @@ hr {
   position: relative;
   padding: 12px 12px;
   border-radius: 6px;
-  color: #09357A;
+  color: #09357a;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-size: 14px;
@@ -702,7 +702,7 @@ hr {
   font-weight: 500;
   cursor: pointer;
   border-radius: 4px;
-  border: 1px solid #EAEDF3;
+  border: 1px solid #eaedf3;
   background: transparent;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.04);
@@ -715,7 +715,7 @@ hr {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   opacity: 1;
-  color: #09357A;
+  color: #09357a;
   text-decoration: none;
 }
 .btn._btn-white {
@@ -734,19 +734,19 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 6px;
-  color: #09357A;
+  color: #09357a;
   font-size: 14px;
   font-weight: 500;
 }
 .btn-link:hover {
-  color: #09357A;
+  color: #09357a;
   opacity: 0.7;
 }
 
 .header {
   padding: 15px 0;
-  border-bottom: 1px solid #EAEDF3;
-  background: #FFF;
+  border-bottom: 1px solid #eaedf3;
+  background: #fff;
 }
 
 .header-inner {
@@ -762,7 +762,7 @@ hr {
           justify-content: space-between;
 }
 .header-inner .btn {
-  color: #6B6C6F;
+  color: #6b6c6f;
   font-weight: 400;
   border-radius: 4px;
 }
@@ -799,7 +799,7 @@ hr {
   }
 }
 .hero p {
-  color: #E7EFFB;
+  color: #e7effb;
 }
 .hero > .container {
   margin: auto;
@@ -832,11 +832,11 @@ hr {
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(244deg, rgba(0, 47, 108, 0.55) -4.46%, #002F6C 66.87%);
+  background: linear-gradient(244deg, rgba(0, 47, 108, 0.55) -4.46%, #002f6c 66.87%);
 }
 @media (max-width: 667px) {
   .hero-bg:after {
-    background: linear-gradient(244deg, rgba(0, 47, 108, 0.55) -94.29%, #002F6C 53.97%);
+    background: linear-gradient(244deg, rgba(0, 47, 108, 0.55) -94.29%, #002f6c 53.97%);
   }
 }
 
@@ -880,7 +880,7 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-top: 1px solid #FBFBFD;
+  border-top: 1px solid #fbfbfd;
   font-style: italic;
   font-size: 14px;
 }
@@ -934,7 +934,7 @@ hr {
 .g-login-t {
   border-radius: 4px 4px 0px 0px;
   padding: 4rem 3rem;
-  color: #FFFFFF;
+  color: #ffffff;
   height: calc(100% - 55px);
 }
 @media (max-width: 1024px) {
@@ -943,25 +943,25 @@ hr {
   }
 }
 .g-login-t p {
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 ._blue .g-login-t {
-  background-color: #002F6C;
+  background-color: #002f6c;
 }
 ._red .g-login-t {
-  background-color: #9D2235;
+  background-color: #9d2235;
 }
 ._gray .g-login-t {
-  background-color: #3E3F42;
+  background-color: #3e3f42;
 }
 
 .g-login-b {
   padding: 1.8rem 3rem;
   text-align: center;
-  border: 1px solid #EAEDF3;
+  border: 1px solid #eaedf3;
   border-radius: 0px 0px 4px 4px;
   border-top: 0;
-  background: #FFF;
+  background: #fff;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.04);
   height: 55px;
@@ -979,7 +979,7 @@ hr {
 }
 
 .p-info {
-  color: #9EA0A5;
+  color: #9ea0a5;
   text-align: center;
   font-size: 10px;
   font-style: italic;
@@ -999,8 +999,8 @@ hr {
 .g-course {
   padding: 3rem 4rem;
   border-radius: 4px;
-  border: 1px solid #EAEDF3;
-  background: #FAFAFA;
+  border: 1px solid #eaedf3;
+  background: #fafafa;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 5rem;
@@ -1044,7 +1044,7 @@ hr {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  color: #1F2126;
+  color: #1f2126;
 }
 
 .g-course-btn {
@@ -1055,8 +1055,8 @@ hr {
   min-height: 18rem;
   padding: 4rem 5rem;
   border-radius: 4px;
-  background: #09357A;
-  color: #FFF;
+  background: #09357a;
+  color: #fff;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(22, 29, 37, 0.1);
           box-shadow: 0px 1px 3px 0px rgba(22, 29, 37, 0.1);
   display: grid;
@@ -1070,6 +1070,10 @@ hr {
   position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
 }
 @media (max-width: 834px) {
   .blue-w {
@@ -1078,6 +1082,7 @@ hr {
   }
 }
 .blue-w:hover {
+  opacity: 1;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -1116,15 +1121,6 @@ hr {
           align-items: center;
   gap: 6px;
 }
-.email-full:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-}
 
 .blue-img {
   max-width: 6rem;
@@ -1140,8 +1136,8 @@ hr {
 
 .white-w {
   border-radius: 4px;
-  border: 1px solid #EAEDF3;
-  background: #FFF;
+  border: 1px solid #eaedf3;
+  background: #fff;
   padding: 6rem var(--gutter);
 }
 @media (max-width: 834px) {
@@ -1190,9 +1186,9 @@ hr {
   display: inline-block;
   width: 58px;
   height: 30px;
-  background-color: #FBFBFD;
+  background-color: #fbfbfd;
   border-radius: 15px;
-  border: 1px solid #EAEDF3;
+  border: 1px solid #eaedf3;
   position: relative;
   cursor: pointer;
 }
@@ -1201,8 +1197,8 @@ hr {
   position: absolute;
   width: 24px;
   height: 24px;
-  background-color: #28334A;
-  border: 1px solid #EAEDF3;
+  background-color: #28334a;
+  border: 1px solid #eaedf3;
   border-radius: 50%;
   top: 50%;
   left: 2px;
@@ -1220,7 +1216,7 @@ hr {
 }
 
 .footer {
-  color: #9EA0A5;
+  color: #9ea0a5;
   padding-bottom: 5rem;
 }
 
@@ -1267,11 +1263,11 @@ hr {
 }
 
 .footer-them-l {
-  color: #28334A;
+  color: #28334a;
 }
 
 .footer-them-d {
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 
 .nav-list {
